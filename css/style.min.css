@@ -729,6 +729,9 @@ a.info-card__link::after {
 .catalog--product h2 {
   padding-left: 6.8vw; }
 
+.catalog--basket h2 {
+  padding-left: 6.8vw; }
+
 .products-gallery--goods {
   padding-left: 6.8vw;
   margin-bottom: 3.75vw; }
@@ -1392,6 +1395,28 @@ input.form-user__btn {
     input.form-user__btn {
       margin: 30px auto 0; } }
 
+.form-user--order {
+  padding-left: 6.8vw;
+  padding-bottom: 4.43vw; }
+
+.form-user--order .title-explanation span {
+  display: block;
+  color: var(--basic-dark-pink); }
+
+.form-user--order form {
+  margin-top: 4.5vw; }
+
+.form-user__sum {
+  display: flex;
+  align-items: center;
+  margin-top: 2.8vw; }
+
+.form-user--order .form-user__note a {
+  text-decoration: underline; }
+
+.form-user--order .field-profiles {
+  grid-template-columns: repeat(3, 1fr); }
+
 .field-profiles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1470,6 +1495,10 @@ input.form-user__btn {
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-position: 50% 50%; }
+
+.field-details__item a {
+  color: var(--back-main);
+  text-decoration: underline; }
 
 .field-comment {
   margin-bottom: 69px;
@@ -1880,6 +1909,133 @@ p.property-goods__text {
   -o-object-fit: cover;
      object-fit: cover;
   /* Вписываем фотографию в область */ }
+
+.product-order__count input[type="number"] {
+  display: inline-block;
+  width: 67px;
+  height: 33px;
+  font-size: clamp(20px, 1.4vw, 25px);
+  font-variation-settings: "wght" 700, "wdth" 90;
+  color: var(--basic-green);
+  text-align: center;
+  border: 1px solid var(--back-main);
+  padding-left: 10px; }
+
+.product-order__count p {
+  margin-top: 8px; }
+
+.product-order__count .info-card__desc {
+  margin-top: 23px; }
+
+.product-order article {
+  position: relative; }
+
+.product-order__btn {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -25px;
+  right: -25px;
+  background: url("../img/btn-close.png") transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer; }
+
+.product-order__btn span {
+  visibility: hidden; }
+
+.product-order__sum {
+  padding-left: 6.8vw;
+  margin-top: 5.3vw;
+  margin-bottom: 5.3vw; }
+
+.product-order h3 > span {
+  color: var(--basic-dark-pink);
+  font-variation-settings: "wght" 300, "wdth" 90; }
+
+.field-delivery__list {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, -webkit-max-content);
+  grid-template-columns: repeat(4, max-content);
+  -moz-column-gap: 2.7vw;
+       column-gap: 2.7vw;
+  row-gap: 25px;
+  justify-content: space-between;
+  margin-top: 25px; }
+  @media (max-width: 1080px) {
+    .field-delivery__list {
+      grid-template-columns: repeat(2, -webkit-max-content);
+      grid-template-columns: repeat(2, max-content); } }
+  @media (max-width: 767px) {
+    .field-delivery__list {
+      grid-template-columns: 1fr; } }
+
+.field-delivery__item {
+  display: grid; }
+
+.field-delivery__item label {
+  position: relative;
+  font-size: clamp(18px, 1.3vw, 23px);
+  padding-left: 50px; }
+  @media (max-width: 1080px) {
+    .field-delivery__item label {
+      font-size: 23px; } }
+
+.field-delivery__item input[type="radio"] + label::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background: transparent;
+  border: 1px solid var(--back-input);
+  border-radius: 50%; }
+
+.field-delivery__item input[type="radio"]:checked + label::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border: 1px solid var(--back-input);
+  background: url("../img/marker-circle-nav.png");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: 50% 50%; }
+
+.field-delivery__item a {
+  color: var(--back-main);
+  text-decoration: underline; }
+
+.field-address {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 9.3vw;
+       column-gap: 9.3vw;
+  row-gap: 6vw; }
+  @media (max-width: 992px) {
+    .field-address {
+      grid-template-columns: 1fr;
+      text-align: center; } }
+
+.field-address__item {
+  margin: 0; }
+
+.field-address__item label {
+  display: block; }
+
+.field-address__item input[type="text"],
+.field-address__item input[type="tel"] {
+  width: 100%;
+  height: 34px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid var(--back-input); }
 
 .page-footer__right {
   text-align: right;
