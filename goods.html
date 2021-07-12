@@ -121,11 +121,24 @@
                 <option>...</option>
               </select>
             </p>
+
+
             <ul class="property-goods__samples">
-              <li> <span></span> </li>
-              <li> <span></span> </li>
-              <li> <span></span> </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="color" value="black" id="filter-black" checked="checked">
+                <label for="filter-black" arial-label="черный цвет"></label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="color" value="transparent" id="filter-no">
+                <label for="filter-no" arial-label="прозрачный цвет"></label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="color" value="beige" id="filter-beige">
+                <label for="filter-beige" arial-label="бежевый цвет"></label>
+              </li>
             </ul>
+
+
             <div class="property-goods__content">
               <p>С нашими ножками вы можете создать стол такого дизайна и размера, который идеально впишется в ваш дом, офис или пространство.</p>
               <p>Подстолье «Лофт П 710» сочетается со столешницами из различных материалов, форм, вписываются в современные интерьеры разных стилей. В стандартных размерах представлено в чёрном цвете.</p>
@@ -143,7 +156,26 @@
                 </picture>
               </div>
             </div>
-          </div></section>
+
+          </div>
+
+            <ul class="products-gallery__direct">
+              <li>
+                <a class="products-gallery__item" href="#">
+                  <img src="img/arrows-goods.png" alt="">
+                  <p class="product-link">Мебельные ножки «Архитектура»</p>
+                </a>
+              </li>
+              <li>
+                <a class="products-gallery__item" href="#">
+                  <p class="product-link" title="">Мебельные ножки «Листья» чёрные</p>
+                  <img src="img/arrows-goods.png" alt="">
+                </a>
+              </li>
+            </ul>
+
+
+        </section>
         <div class="catalog catalog--inner catalog--product">
           <h2 class="headline">Похожие товары</h2>
           <div class="catalog__list gallery-card gallery-card--product">
@@ -229,7 +261,7 @@
                           <input id="full-name" name="full-name" type="text">
                         </p>
                         <p class="field-profiles__item">
-                          <label for="first-name">Номер телефона или e-mail:</label>
+                          <label for="tel">Номер телефона или e-mail:</label>
                           <input id="tel" name="tel" type="tel">
                         </p>
                       </fieldset>
@@ -322,8 +354,6 @@
                 </footer>
                 <script src="js/swiper.min.js"></script>
                 <script src="js/script-slider.min.js"></script>
-                <script src="js/script.min.js"></script>
-                <script src="js/swiper.js"></script>
                 <script src="js/swiper-slider-thumbs.js"></script>
               </body>
               </html>
