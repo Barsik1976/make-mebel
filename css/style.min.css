@@ -739,6 +739,9 @@ a.info-card__link::after {
 .products-gallery--goods {
   padding-left: 6.8vw;
   margin-bottom: 3.75vw; }
+  @media (max-width: 992px) {
+    .products-gallery--goods {
+      margin-bottom: 6vw; } }
 
 .products-gallery__list {
   padding-top: 2.24vw; }
@@ -754,6 +757,10 @@ a.info-card__link::after {
 
 .products-gallery--idea h2 {
   padding-left: 10.4vw; }
+
+@media (max-width: 992px) {
+  .products-gallery--goods h2 {
+    text-align: center; } }
 
 .products-gallery p {
   font-family: inherit;
@@ -1666,16 +1673,26 @@ div.circle-block__card--left {
        column-gap: 63px;
   margin-top: 72px;
   margin-bottom: 72px; }
+  @media (max-width: 992px) {
+    .goods {
+      grid-template-columns: 1fr; } }
 
 .goods__gallery {
-  width: 800px; }
+  width: 41.6vw; }
 
 .goods .products-gallery__list {
   padding: 0; }
+  @media (max-width: 992px) {
+    .goods .products-gallery__list {
+      margin: 0 auto; } }
 
 .goods__gallery .swiper-wrapper,
 .goods__gallery .swiper-slide {
   height: 100%; }
+
+@media (max-width: 992px) {
+  .goods__property {
+    margin-top: 5vw; } }
 
 .property-goods {
   position: relative; }
@@ -1788,8 +1805,13 @@ p.property-goods__text {
   position: relative;
   display: flex;
   padding-left: 1.8vw;
+  padding-right: 0;
   margin-top: 2.7vw;
   z-index: 10; }
+  @media (max-width: 1280px) {
+    .property-goods__content .info-card {
+      flex-direction: column;
+      padding-left: 0; } }
 
 .property-goods__content .info-card p {
   font-size: clamp(22px, 1.75vw, 33px);
@@ -1803,22 +1825,20 @@ p.property-goods__text {
 
 .property-goods__content button {
   margin-left: 4.17vw; }
+  @media (max-width: 1280px) {
+    .property-goods__content button {
+      margin-top: 1.5vw;
+      margin-left: 0; } }
 
 .gallery-top {
   margin-top: 20px; }
 
 .gallery-top.swiper-container {
   position: relative;
-  height: 968px;
+  height: 50.4vw;
   overflow: hidden;
   margin: 0 auto;
   outline: 1px solid green; }
-  @media (max-width: 1280px) {
-    .gallery-top.swiper-container {
-      height: 600px; } }
-  @media (max-width: 992px) {
-    .gallery-top.swiper-container {
-      height: 500px; } }
 
 .gallery-top::after {
   position: absolute;
@@ -1838,7 +1858,7 @@ p.property-goods__text {
 
 .gallery-top.swiper-slide {
   width: 100%;
-  height: 968px; }
+  height: 50.4vw; }
 
 .gallery-top__item.swiper-slide {
   background-repeat: no-repeat;
@@ -1848,16 +1868,7 @@ p.property-goods__text {
 
 .gallery-top.swiper-container-autoheight, .gallery-top.swiper-container-autoheight .swiper-slide {
   width: auto;
-  height: 968px; }
-  @media (max-width: 992px) {
-    .gallery-top.swiper-container-autoheight, .gallery-top.swiper-container-autoheight .swiper-slide {
-      height: 500px; } }
-  @media (max-width: 680px) {
-    .gallery-top.swiper-container-autoheight, .gallery-top.swiper-container-autoheight .swiper-slide {
-      height: 400px; } }
-  @media (max-width: 480px) {
-    .gallery-top.swiper-container-autoheight, .gallery-top.swiper-container-autoheight .swiper-slide {
-      height: 300px; } }
+  height: 50.4vw; }
 
 .gallery-top.swiper-container-autoheight, .gallery-top.swiper-container-autoheight .swiper-slide img {
   display: block;
@@ -1887,8 +1898,7 @@ p.property-goods__text {
       width: 10px !important; } }
 
 .gallery-thumbs.swiper-slide figure {
-  width: 215px;
-  height: 261px; }
+  height: 13.5vw; }
 
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 0.5; }
@@ -1905,17 +1915,13 @@ p.property-goods__text {
     border: none;
     margin-right: 16px !important; } }
 
-@media (max-width: 680px) {
-  .gallery-thumbs__item.swiper-slide {
-    height: 10px; } }
-
 .gallery-thumbs .swiper-wrapper {
   display: flex; }
 
 .gallery-thumbs.swiper-container-autoheight figure {
   width: 100%;
   /* Ширина области */
-  height: 261px;
+  height: 13.5vw;
   /* Высота области */
   margin: 0;
   /* Обнуляем отступы */
@@ -1953,9 +1959,6 @@ p.property-goods__text {
   text-align: center;
   border: 1px solid var(--back-main);
   padding-left: 10px; }
-  @media (max-width: 480px) {
-    .product-order__count input[type="number"] {
-      margin-top: 20px; } }
 
 .product-order__count p {
   margin-top: 8px; }
