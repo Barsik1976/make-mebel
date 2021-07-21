@@ -292,15 +292,21 @@ div.navigation-header {
   visibility: visible; }
 
 .button {
-  width: 270px;
   height: 64px;
   font-family: inherit;
-  font-size: 34px;
+  font-size: clamp(25px, 1.75vw, 33px);
   font-variation-settings: "wght" 400, "wdth" 100;
   color: var(--basic-white);
   background-color: var(--back-main);
   border: none;
+  padding-left: 61px;
+  padding-right: 61px;
   cursor: pointer; }
+  @media (max-width: 580px) {
+    .button {
+      height: 50px;
+      padding-left: 32px;
+      padding-right: 32px; } }
 
 .page-main--idea .crumbs {
   padding-left: 10.4vw;
@@ -595,7 +601,8 @@ a.info-card__link::after {
 .catalog {
   padding-top: 38px; }
 
-.catalog--inner {
+.catalog--inner,
+.catalog--standart {
   padding-top: 0; }
 
 .catalog a {
@@ -661,6 +668,10 @@ a.info-card__link::after {
 
 .catalog__list {
   margin-top: clamp(60px, 10vw, 134px); }
+
+.catalog--standart .gallery-card {
+  margin-top: clamp(60px, 5vw, 80px);
+  margin-bottom: clamp(60px, 5vw, 80px); }
 
 .catalog--inner .info-card {
   padding: 0;
@@ -730,9 +741,8 @@ a.info-card__link::after {
     .catalog--about .catalog__present > div {
       grid-template-columns: 1fr; } }
 
-.catalog--product h2 {
-  padding-left: 6.8vw; }
-
+.catalog--product h2,
+.catalog--standart h2,
 .catalog--basket h2 {
   padding-left: 6.8vw; }
 
@@ -1126,6 +1136,9 @@ a.gallery-card__item {
   @media (max-width: 480px) {
     .promotion > p {
       font-size: 25px; } }
+
+.ideas-cards {
+  margin-bottom: 2.8vw; }
 
 .ideas-cards__list {
   display: grid;
@@ -1694,10 +1707,129 @@ div.circle-block__card--left {
   .goods__property {
     margin-top: 5vw; } }
 
+.orders {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 63px;
+       column-gap: 63px;
+  padding-left: 6.8vw;
+  margin-top: 72px;
+  margin-bottom: 72px; }
+  @media (max-width: 992px) {
+    .orders {
+      grid-template-columns: 1fr; } }
+  @media (max-width: 680px) {
+    .orders {
+      padding-left: 6.8vw; } }
+  @media (max-width: 580px) {
+    .orders {
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+
+.user-order {
+  position: relative; }
+
+@media (max-width: 992px) {
+  .user-order:last-child {
+    margin-top: 7vw; } }
+
+.user-order p {
+  font-size: clamp(22px, 1.75vw, 33px);
+  font-variation-settings: "wght" 400,"wdth" 100;
+  color: var(--back-main);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2vw;
+  padding: 0; }
+
+p.user-order__text {
+  font-size: clamp(20px, 1.4vw, 25px); }
+
+.user-order__text p:last-child {
+  display: flex; }
+
+p.user-order__select {
+  color: var(--basic-dark-pink); }
+
+.user-order__content p {
+  font-size: clamp(22px, 1.75vw, 33px);
+  font-variation-settings: "wght" 400,"wdth" 100;
+  color: var(--back-main);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2.6vw; }
+
+.user-order a {
+  font-size: clamp(28px, 2vw, 42px);
+  font-variation-settings: "wght" 400,"wdth" 100;
+  color: var(--back-main);
+  text-decoration: none;
+  border-bottom: 4px solid var(--basic-green); }
+
+.user-order .info-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
+  z-index: 10; }
+  @media (max-width: 1280px) {
+    .user-order .info-card {
+      flex-direction: column;
+      padding-left: 0; } }
+  @media (max-width: 992px) {
+    .user-order .info-card {
+      flex-direction: row; } }
+  @media (max-width: 580px) {
+    .user-order .info-card {
+      flex-direction: column; } }
+
+.user-order .info-card p {
+  font-size: clamp(22px, 1.75vw, 33px);
+  line-height: 48px;
+  text-align: left;
+  margin: 0; }
+
+.user-order .info-card span {
+  font-size: 50px;
+  text-align: left; }
+  @media (max-width: 992px) {
+    .user-order .info-card span {
+      font-size: 42px; } }
+
+.user-order button {
+  margin-left: 4.17vw; }
+  @media (max-width: 1280px) {
+    .user-order button {
+      margin-left: 0; } }
+  @media (max-width: 992px) {
+    .user-order button {
+      margin-top: 0;
+      margin-left: 4.17vw; } }
+  @media (max-width: 580px) {
+    .user-order button {
+      margin-left: 0; } }
+
+.user-order ol {
+  font-family: inherit;
+  font-size: clamp(20px, 1.4vw, 25px);
+  color: var(--basic-dark-pink);
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  margin-top: 2.45vw; }
+  @media (max-width: 580px) {
+    .user-order ol {
+      margin-top: 7vw; } }
+
+.user-order li {
+  margin-bottom: 0.42vw; }
+
 .property-goods {
   position: relative; }
 
 p.property-goods__text {
+  font-size: clamp(20px, 1.4vw, 25px);
   padding: 0; }
 
 .property-goods__text p:last-child {
