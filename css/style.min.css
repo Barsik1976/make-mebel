@@ -1601,6 +1601,7 @@ input.form-user__btn {
       font-size: 25px; } }
 
 .circle-block__item {
+  width: 100%;
   position: absolute;
   width: clamp(264px, 20vw, 397px);
   z-index: 15; }
@@ -1618,7 +1619,8 @@ input.form-user__btn {
   background-size: 100% auto;
   border: none;
   cursor: pointer;
-  z-index: 15; }
+  z-index: 20;
+  outline: 3px solid red; }
   @media (max-width: 1600px) {
     .circle-block__btn {
       background-size: 80% auto; } }
@@ -1633,7 +1635,8 @@ div.circle-block__card {
   position: absolute;
   top: -5vw;
   left: 2.5vw;
-  z-index: -1; }
+  z-index: 30;
+  outline: 3px solid yellow; }
 
 div.circle-block__card--bottom {
   top: -2vw;
@@ -1649,7 +1652,8 @@ div.circle-block__card--left {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  z-index: 50; }
 
 .circle-block__info.info-card {
   text-align: center;
