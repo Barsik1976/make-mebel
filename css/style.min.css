@@ -1600,13 +1600,12 @@ input.form-user__btn {
     .title-explanation {
       font-size: 25px; } }
 
-.circle-block__item {
-  width: 100%;
+.circle-block {
   position: absolute;
   width: clamp(264px, 20vw, 397px);
   z-index: 15; }
   @media (max-width: 992px) {
-    .circle-block__item {
+    .circle-block {
       display: none; } }
 
 .circle-block__btn {
@@ -1631,18 +1630,11 @@ input.form-user__btn {
     .circle-block__btn {
       background-size: 55% auto; } }
 
-div.circle-block__card {
-  position: absolute;
-  top: -5vw;
-  left: 2.5vw;
-  z-index: 30;
-  outline: 3px solid yellow; }
-
-div.circle-block__card--bottom {
+.circle-block__card--bottom {
   top: -2vw;
   left: 2.5vw; }
 
-div.circle-block__card--left {
+.circle-block__card--left {
   left: -346px; }
 
 .circle-block__card {
@@ -1653,7 +1645,11 @@ div.circle-block__card--left {
   text-align: center;
   padding: 20px;
   padding-bottom: 30px;
-  z-index: 50; }
+  position: absolute;
+  top: -5vw;
+  left: 2.5vw;
+  z-index: 30;
+  outline: 3px solid yellow; }
 
 .circle-block__info.info-card {
   text-align: center;
@@ -1674,9 +1670,9 @@ div.circle-block__card--left {
   border-bottom: 4px solid var(--basic-green);
   margin-top: 1.4vw; }
 
-.circle-block__item:hover .circle-block__card,
-.circle-block__item:focus .circle-block__card,
-.circle-block__item:active .circle-block__card {
+.circle-block__btn:hover ~ .circle-block__card,
+.circle-block__btn:focus-within ~ .circle-block__card,
+.circle-block__btn:active ~ .circle-block__card {
   display: block; }
 
 .text-site {
