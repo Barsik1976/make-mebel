@@ -1612,6 +1612,7 @@ input.form-user__btn {
       display: none; } }
 
 .circle-block__btn {
+  position: relative;
   display: block;
   width: 48px;
   height: 48px;
@@ -1640,7 +1641,7 @@ div.circle-block__card--left {
 
 .circle-block__card {
   position: absolute;
-  opacity: 0;
+  display: none;
   width: clamp(230px, 18vw, 346px);
   top: -5vw;
   left: 2.5vw;
@@ -1672,8 +1673,15 @@ div.circle-block__card--left {
 .circle-block__btn:hover .circle-block__card,
 .circle-block__btn:focus-within .circle-block__card,
 .circle-block__btn:active .circle-block__card {
-  opacity: 1; }
+  display: block; }
 
+/*
+.circle-block__item:hover .circle-block__card,
+.circle-block__item:focus-within .circle-block__card,
+.circle-block__item:active .circle-block__card {
+  display: block;
+}
+*/
 .text-site {
   font-family: inherit;
   font-size: 25px;
