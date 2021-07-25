@@ -310,9 +310,6 @@ div.navigation-header {
       padding-left: 15px;
       padding-right: 15px; } }
 
-.button__search {
-  font-size: 0; }
-
 .page-main--idea .crumbs {
   padding-left: 10.4vw;
   padding-right: 10.4vw; }
@@ -323,8 +320,7 @@ div.navigation-header {
 
 .slider-main__list.swiper-wrapper {
   width: 100%;
-  height: 47vw;
-  overflow: hidden; }
+  height: 47vw; }
   @media (max-width: 1280px) {
     .slider-main__list.swiper-wrapper {
       height: clamp(404px, 60vw, 590px); } }
@@ -1242,8 +1238,7 @@ a.gallery-card__item {
 
 .user-slider__list.swiper-wrapper {
   width: 100%;
-  height: 46.3vw;
-  overflow: hidden; }
+  height: 46.3vw; }
   @media (max-width: 1600px) {
     .user-slider__list.swiper-wrapper {
       height: clamp(345px, 60vw, 600px); } }
@@ -1283,23 +1278,6 @@ a.gallery-card__item {
 }
 
 */
-.user-slider__list.swiper-wrapper {
-  width: 100%;
-  height: 47vw;
-  overflow: hidden; }
-  @media (max-width: 1280px) {
-    .user-slider__list.swiper-wrapper {
-      height: clamp(345px, 60vw, 600px); } }
-
-.user-slider__item {
-  display: flex;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100% auto; }
-  @media (max-width: 1280px) {
-    .user-slider__item {
-      background-size: cover; } }
-
 .user-slider__toggle {
   position: absolute;
   width: 37px;
@@ -1613,27 +1591,26 @@ input.form-user__btn {
   @media (max-width: 992px) {
     .circle-block__item {
       display: none; } }
-
-.circle-block__btn {
-  position: relative;
-  display: block;
-  width: 48px;
-  height: 48px;
-  background: url("../img/marker-circle.png"), transparent;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  border: none;
-  cursor: pointer;
-  z-index: 20; }
-  @media (max-width: 1600px) {
-    .circle-block__btn {
-      background-size: 80% auto; } }
-  @media (max-width: 1280px) {
-    .circle-block__btn {
-      background-size: 65% auto; } }
-  @media (max-width: 992px) {
-    .circle-block__btn {
-      background-size: 55% auto; } }
+  .circle-block__item::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url("../img/marker-circle.png"), transparent;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: none;
+    cursor: pointer;
+    z-index: 20; }
+    @media (max-width: 1600px) {
+      .circle-block__item::before {
+        background-size: 80% auto; } }
+    @media (max-width: 1280px) {
+      .circle-block__item::before {
+        background-size: 65% auto; } }
+    @media (max-width: 992px) {
+      .circle-block__item::before {
+        background-size: 55% auto; } }
 
 div.circle-block__card--bottom {
   top: -2vw;
@@ -1673,18 +1650,11 @@ div.circle-block__card--left {
   border-bottom: 4px solid var(--basic-green);
   margin-top: 1.4vw; }
 
-.circle-block__btn:hover .circle-block__card,
-.circle-block__btn:focus-within .circle-block__card,
-.circle-block__btn:active .circle-block__card {
-  display: block; }
-
-/*
 .circle-block__item:hover .circle-block__card,
 .circle-block__item:focus-within .circle-block__card,
 .circle-block__item:active .circle-block__card {
-  display: block;
-}
-*/
+  display: block; }
+
 .text-site {
   font-family: inherit;
   font-size: 25px;
