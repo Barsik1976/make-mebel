@@ -1,9 +1,5 @@
 var swiper = new Swiper(".swiper-container", {
         spaceBetween: 30,
-        effect: "fade",
-        autoplay: {
-          delay: 1500,
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
