@@ -257,7 +257,7 @@ div.navigation-header {
   width: 100%;
   font-size: 12px;
   color: var(--basic-white);
-  padding: 0 0 0 10px;
+  padding: 0 0 0 6px;
   background: transparent;
   border: 0;
   outline: 0;
@@ -265,7 +265,7 @@ div.navigation-header {
   pointer-events: auto; }
 
 .form-search input[type="search"]::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.3); }
 
 .form-search button {
@@ -309,6 +309,9 @@ div.navigation-header {
       height: 42px;
       padding-left: 15px;
       padding-right: 15px; } }
+
+.button__search {
+  font-size: 0; }
 
 .page-main--idea .crumbs {
   padding-left: 10.4vw;
