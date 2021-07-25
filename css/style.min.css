@@ -1674,15 +1674,6 @@ div.circle-block__card--left {
 .circle-block__btn:active .circle-block__card {
   opacity: 1; }
 
-/*
-
-.circle-block__item:hover .circle-block__card,
-.circle-block__item:focus-within .circle-block__card,
-.circle-block__item:active .circle-block__card {
-  opacity: 1;
-}
-
-*/
 .text-site {
   font-family: inherit;
   font-size: 25px;
