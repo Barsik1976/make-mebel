@@ -1311,19 +1311,12 @@ a.gallery-card__item {
 
 .form-user__present {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  align-items: center; }
-
-.form-user__present {
-  display: grid;
   grid-template-columns: 46.8vw 1fr;
   -moz-column-gap: 2vw;
        column-gap: 2vw;
-  align-items: center;
+  align-items: start;
   margin-bottom: 85px; }
-  @media (max-width: 1280px) {
+  @media (max-width: 1080px) {
     .form-user__present {
       grid-template-columns: 1fr;
       text-align: center; } }
@@ -1584,8 +1577,11 @@ div.circle-block__card--bottom {
   top: -2vw;
   left: 2.5vw; }
 
+div.circle-block__card--top {
+  top: -12vw; }
+
 div.circle-block__card--left {
-  left: -346px; }
+  left: -87%; }
 
 .circle-block__card {
   position: absolute;
@@ -2210,6 +2206,14 @@ p.property-goods__text {
       text-align: center;
       padding-left: 3.6vw;
       padding-right: 3.6vw; } }
+
+@media (max-width: 1280px) {
+  .page-footer__right.text-site {
+    font-size: 20px; } }
+
+@media (max-width: 680px) {
+  .page-footer__right.text-site {
+    font-size: 18px; } }
 
 @media (max-width: 580px) {
   .page-footer__right a {
