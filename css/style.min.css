@@ -1587,7 +1587,7 @@ div.circle-block__card--left {
 
 .circle-block__card {
   position: absolute;
-  display: block;
+  display: none;
   width: clamp(230px, 18vw, 346px);
   top: -5vw;
   left: 2.5vw;
