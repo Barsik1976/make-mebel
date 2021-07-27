@@ -315,27 +315,17 @@ div.navigation-header {
   padding-right: 10.4vw; }
 
 .slider-main {
-  position: relative;
-  width: 100%; }
+  position: relative; }
 
 .slider-main__list.swiper-wrapper {
-  width: 100%;
+  max-width: 100%;
   height: 47vw; }
-  @media (max-width: 1280px) {
-    .slider-main__list.swiper-wrapper {
-      height: clamp(404px, 60vw, 590px); } }
 
 .slider-main__item.swiper-slide {
   display: flex;
   max-width: 100%;
   background-repeat: no-repeat;
-  background-size: 100% auto; }
-  @media (max-width: 1280px) {
-    .slider-main__item.swiper-slide {
-      background-size: cover; } }
-
-.slider-main__item ~ .circle-block__item {
-  transform: translate3d(0px, 0px, 0px) !important; }
+  background-size: cover; }
 
 /*
 .slider-main__item--1  {
@@ -377,6 +367,9 @@ div.navigation-header {
   border: none;
   cursor: pointer;
   z-index: 10; }
+  @media (max-width: 767px) {
+    .slider-main__toggle {
+      display: none; } }
 
 .slider-main__toggle--prev {
   right: 223px;
@@ -1239,12 +1232,6 @@ a.gallery-card__item {
 .user-slider__list.swiper-wrapper {
   width: 100%;
   height: 46.3vw; }
-  @media (max-width: 1600px) {
-    .user-slider__list.swiper-wrapper {
-      height: clamp(345px, 60vw, 600px); } }
-  @media (max-width: 1280px) {
-    .user-slider__list.swiper-wrapper {
-      height: clamp(345px, 60vw, 600px); } }
 
 .user-slider__item.swiper-slide {
   display: flex;
@@ -1252,32 +1239,6 @@ a.gallery-card__item {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/*
-.user-slider__item--1  {
-  background-image: url("../img/slider-bottom_01.jpg");
-}
-
-.user-slider__item--2  {
-  background-image: url("../img/slider-bottom_02.jpg");
-}
-
-.user-slider__item--3  {
-  background-image: url("../img/slider-bottom_03.jpg");
-}
-
-.user-slider__item--4  {
-  background-image: url("../img/slider-bottom_04.jpg");
-}
-
-.user-slider__item--5  {
-  background-image: url("../img/slider-bottom_05.jpg");
-}
-
-.user-slider__item--6  {
-  background-image: url("../img/slider-bottom_06.jpg");
-}
-
-*/
 .user-slider__toggle {
   position: absolute;
   width: 37px;
@@ -1287,6 +1248,9 @@ a.gallery-card__item {
   border: none;
   cursor: pointer;
   z-index: 10; }
+  @media (max-width: 767px) {
+    .user-slider__toggle {
+      display: none; } }
 
 .user-slider__toggle--prev {
   right: 223px;
@@ -1409,7 +1373,7 @@ a.gallery-card__item {
 
 input.form-user__btn {
   display: block;
-  font-size: 34px;
+  font-size: clamp(22px, 1.75vw, 33px);
   font-variation-settings: "wght" 400, "wdth" 100;
   color: var(--basic-white);
   margin-left: auto; }
