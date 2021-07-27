@@ -1129,13 +1129,41 @@ a.gallery-card__item {
   color: var(--back-main);
   text-align: center;
   margin: 0;
-  z-index: 20; }
+  z-index: 20;
+  -webkit-animation-name: move-index;
+          animation-name: move-index;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  /*
+  animation-iteration-count: infinite;
+  */
+  opacity: 0; }
   @media (max-width: 992px) {
     .promotion > p {
       font-size: 28px; } }
   @media (max-width: 480px) {
     .promotion > p {
       font-size: 25px; } }
+
+@-webkit-keyframes move-index {
+  0% {
+    transform: translateX(-100%) translateY(0); }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1; } }
+
+@keyframes move-index {
+  0% {
+    transform: translateX(-100%) translateY(0); }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1; } }
 
 .ideas-cards {
   margin-bottom: 2.8vw; }
