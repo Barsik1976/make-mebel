@@ -1132,10 +1132,10 @@ a.gallery-card__item {
   z-index: 20;
   -webkit-animation-name: move-index;
           animation-name: move-index;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in;
@@ -1152,17 +1152,21 @@ a.gallery-card__item {
 
 @-webkit-keyframes move-index {
   0% {
-    transform: translateX(-100%) translateY(0); }
-  100% {
+    transform: translateX(-80%) translateY(0); }
+  50% {
     transform: translateX(-50%) translateY(0);
-    opacity: 1; } }
+    opacity: 1; }
+  100% {
+    transform: translateX(-10%) translateY(0); } }
 
 @keyframes move-index {
   0% {
-    transform: translateX(-100%) translateY(0); }
-  100% {
+    transform: translateX(-80%) translateY(0); }
+  50% {
     transform: translateX(-50%) translateY(0);
-    opacity: 1; } }
+    opacity: 1; }
+  100% {
+    transform: translateX(-10%) translateY(0); } }
 
 .ideas-cards {
   margin-bottom: 2.8vw; }
