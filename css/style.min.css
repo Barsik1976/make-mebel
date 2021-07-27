@@ -1132,17 +1132,16 @@ a.gallery-card__item {
   z-index: 20;
   -webkit-animation-name: move-index;
           animation-name: move-index;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-  /*
-  animation-iteration-count: infinite;
-  */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   opacity: 0; }
   @media (max-width: 992px) {
     .promotion > p {
