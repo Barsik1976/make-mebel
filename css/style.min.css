@@ -116,7 +116,7 @@ div.navigation-header {
   @media (max-width: 680px) {
     .main-nav__toggle {
       display: block;
-      left: 40px; } }
+      left: 10px; } }
 
 .main-nav--closed .main-nav__toggle::before {
   display: block;
@@ -195,7 +195,7 @@ div.navigation-header {
   text-decoration: none; }
   @media (max-width: 1280px) {
     .site-list a {
-      font-size: 15px; } }
+      font-size: 16px; } }
   @media (max-width: 1080px) {
     .site-list a {
       font-size: 18px; } }
@@ -243,24 +243,17 @@ div.navigation-header {
 
 .form-search {
   position: relative;
-  width: 134px;
+  max-width: 300px;
   display: flex;
   align-items: center;
   padding: 3px;
-  border: 0.7px solid var(--basic-white); }
-  @media (max-width: 1080px) {
+  border: 0.7px solid var(--basic-white);
+  margin-top: 1.82vw; }
+  @media (max-width: 767px) {
     .form-search {
-      width: 100%; } }
-  @media (max-width: 580px) {
-    .form-search {
-      width: 190px;
-      display: grid;
-      grid-template-columns: repeat(2, -webkit-max-content);
-      grid-template-columns: repeat(2, max-content);
-      justify-content: center;
-      margin: auto;
-      margin-top: 20px;
-      margin-bottom: 30px; } }
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 7vw; } }
 
 .form-search input[type="search"] {
   width: 100%;
@@ -766,6 +759,12 @@ a.info-card__link::after {
 
 .content-inner__list--template li {
   position: relative; }
+
+.catalog--basket .gallery-card {
+  margin-top: 5vw; }
+  @media (max-width: 580px) {
+    .catalog--basket .gallery-card {
+      margin-top: 35px; } }
 
 .products-gallery--goods {
   padding-left: 6.8vw;
@@ -2485,8 +2484,8 @@ a.business__tel {
 
 .user-nav {
   display: grid;
-  grid-template-columns: repeat(3, -webkit-max-content);
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
   -moz-column-gap: 1.8vw;
        column-gap: 1.8vw;
   justify-content: end;
@@ -2496,28 +2495,26 @@ a.business__tel {
       justify-content: center; } }
   @media (max-width: 680px) {
     .user-nav {
+      -moz-column-gap: 4vw;
+           column-gap: 4vw;
       padding-top: 10px; } }
-  @media (max-width: 580px) {
-    .user-nav {
-      grid-template-columns: 1fr;
-      padding-left: 0; } }
 
 .user-nav__tel {
   display: grid;
-  font-size: clamp(14px, 1.3vw, 25px);
+  font-size: clamp(16px, 1.3vw, 25px);
   line-height: 28px;
   color: var(--basic-white);
   text-decoration: none; }
   @media (max-width: 1280px) {
     .user-nav__tel {
-      font-size: 16px; } }
+      font-size: 18px; } }
   @media (max-width: 1080px) {
     .user-nav__tel {
-      font-size: 20px; } }
+      font-size: 21px; } }
   @media (max-width: 680px) {
     .user-nav__tel {
       font-size: 25px;
-      padding-left: 18vw; } }
+      padding-left: 0; } }
   @media (max-width: 580px) {
     .user-nav__tel {
       grid-column: 1fr;
@@ -2525,8 +2522,11 @@ a.business__tel {
       padding-left: 0; } }
   @media (max-width: 480px) {
     .user-nav__tel {
-      font-size: 25px;
-      padding-left: 18vw; } }
+      font-size: 23px; } }
+  @media (max-width: 380px) {
+    .user-nav__tel {
+      font-size: 21px;
+      padding-left: 50px; } }
 
 .user-nav__cart {
   position: relative;

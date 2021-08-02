@@ -43,20 +43,15 @@
           </li>
         </ul>
       </nav>
-      <div class="navigation-header__user user-nav">
-        <a class="user-nav__tel" href="tel:+78002222198">8 800 2222 198</a>
-        <form class="user-nav__form form-search" action="" method="get">
-          <label class="visually-hidden" for="search-form-input">Поле поиска</label>
-          <input type="search" placeholder="Поиск по сайту" id="search-form-input" required="">
-          <button type="submit" class="button button__search" aria-label="Найти"></button>
-        </form>
-        <div class="user-nav__cart">
-          <a href="basket.html" title="корзина">
-            <img src="img/basket.svg" width="24" height="24">
-            <span>5</span>
-          </a>
-        </div>
+    <div class="navigation-header__user user-nav">
+      <a class="user-nav__tel" href="tel:+78002222198">8 800 2222 198</a>
+      <div class="user-nav__cart">
+        <a href="basket.html" title="корзина">
+          <img src="img/basket.svg" width="24" height="24" alt="корзина товаров">
+          <span>5</span>
+        </a>
       </div>
+    </div>
     </div>
   </header>
   <main class="page-main">
@@ -205,6 +200,11 @@
                       <a href="#" title="">Обработка персональных данных</a>
                     </li>
                   </ul>
+                  <form class="business__form form-search" action="" method="get">
+                    <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+                    <input type="search" placeholder="Поиск по сайту" id="search-form-input" required="">
+                    <button type="submit" class="button button__search" aria-label="Найти"></button>
+                  </form>
                 </article>
               </div>
             </div>
