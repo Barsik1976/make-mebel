@@ -1645,9 +1645,12 @@ a.gallery-card__item {
       grid-template-columns: 1fr;
       text-align: center; } }
 
-@media (max-width: 580px) {
-  .form-user__sum h3 > span {
-    display: block; } }
+.form-user__sum p > span {
+  font-variation-settings: "wght" 400, "wdth" 95;
+  color: var(--basic-dark-pink); }
+  @media (max-width: 580px) {
+    .form-user__sum p > span {
+      display: block; } }
 
 .form-user--order .form-user__note a {
   text-decoration: underline; }
@@ -2391,7 +2394,7 @@ a.property-goods__link {
     .product-order__sum {
       padding-left: 0; } }
 
-.product-order__sum span {
+.product-order__sum p > span {
   font-variation-settings: "wght" 400, "wdth" 95;
   color: var(--basic-dark-pink); }
 
@@ -2447,6 +2450,9 @@ a.property-goods__link {
     .product-order__sum a::before {
       left: -52px;
       background-size: 100% auto; } }
+
+.form-user__sum .caption {
+  font-variation-settings: "wght" 700, "wdth" 90; }
 
 .field-delivery__list {
   max-width: 100%;
