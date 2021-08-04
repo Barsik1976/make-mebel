@@ -1553,10 +1553,10 @@ a.gallery-card__item {
 .form-user__filter {
   max-width: 1336px;
   margin-top: 90px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1280px) {
     .form-user__filter {
       max-width: 1110px; } }
-  @media (max-width: 1280px) {
+  @media (max-width: 1080px) {
     .form-user__filter {
       max-width: 890px; } }
   @media (max-width: 992px) {
@@ -1935,6 +1935,12 @@ div.circle-block__card--left {
   display: inline-block;
   margin: 0;
   margin-left: 50px; }
+  @media (max-width: 1280px) {
+    .card-delivery .site-link {
+      font-size: 16px; } }
+  @media (max-width: 1080px) {
+    .card-delivery .site-link {
+      font-size: 18px; } }
 
 .card-delivery__header button {
   display: inline-block;
@@ -2526,7 +2532,7 @@ a.property-goods__link {
        column-gap: 2.3vw;
   row-gap: 25px;
   margin-top: 25px; }
-  @media (max-width: 1280px) {
+  @media (max-width: 1080px) {
     .field-delivery__list {
       grid-template-columns: repeat(2, 1fr);
       -moz-column-gap: 3.5vw;
@@ -2543,7 +2549,7 @@ a.property-goods__link {
 .field-delivery__item label {
   position: relative;
   font-size: clamp(18px, 1.3vw, 23px);
-  line-height: 1.3vw;
+  line-height: 28px;
   padding-left: 50px; }
   @media (max-width: 1080px) {
     .field-delivery__item label {
@@ -2560,17 +2566,12 @@ a.property-goods__link {
   background: transparent;
   border: 1px solid var(--back-input);
   border-radius: 50%; }
-  @media (max-width: 1280px) {
-    .field-delivery__item input[type="radio"] + label::before {
-      top: -3px; } }
 
 .field-delivery__item input[type="radio"]:checked + label::before {
   position: absolute;
   content: "";
   width: 35px;
   height: 35px;
-  top: 50%;
-  transform: translateY(-50%);
   left: 0;
   border: 1px solid var(--back-input);
   background: url("../img/marker-circle-nav.png");
@@ -2589,8 +2590,8 @@ a.property-goods__link {
 .field-address {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 9.3vw;
-       column-gap: 9.3vw;
+  -moz-column-gap: 7vw;
+       column-gap: 7vw;
   row-gap: 3.3vw; }
   @media (max-width: 992px) {
     .field-address {
@@ -2792,6 +2793,9 @@ a.business__tel {
   color: var(--basic-white);
   top: -15px;
   right: 2px; }
+
+.hide {
+  display: none; }
 
 .swiper-container {
   margin-left: auto;
