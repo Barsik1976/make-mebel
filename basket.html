@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>Make-mebel</title>
-  <link rel="preload" href="/fonts/bahnschrift.woff2" as="font" crossorigin>
+  <title>Vending-plus</title>
+  <link rel="preload" href="/fonts/ERASMD.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/Bahnschrift.woff2" as="font" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
@@ -13,342 +14,258 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="navigation-header container">
-      <nav class="main-nav main-nav--closed">
-        <a class="main-nav__logo logo-mebel" href="index.html" title="Логотип Make-mebel">
-          <svg class="logo-mebel__img logo-mebel__img--mobile" width="100" height="100">
-            <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
-          </svg>
-          <svg class="logo-mebel__img logo-mebel__img--desktop" width="77" height="77">
-            <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
-          </svg>
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="about.html">О компании</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog-all.html">Каталог</a>
-          </li>
-          <li class="site-list__item">
-            <a href="ideas.html">Идеи для вдохновения</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Оплата и доставка</a>
-          </li>
-          <li class="site-list__item">
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    <div class="navigation-header__user user-nav">
-      <a class="user-nav__tel" href="tel:+78002222198">8 800 2222 198</a>
-      <div class="user-nav__cart">
-        <a href="basket.html" title="корзина">
-          <img src="img/basket.svg" width="24" height="24" alt="корзина товаров">
-          <span>5</span>
-        </a>
+  <div class="wrapper-body">
+    <header class="page-header">
+      <div class="page-header__top header-top container">
+        <form class="form-search" action="" method="get">
+          <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+          <input type="search" placeholder="поиск по каталогу" id="search-form-input" required="">
+          <button type="submit" class="form-search__btn">Найти</button>
+        </form>
+        <a class="header-top__tel" href="tel:+78004503434">8 800 450-34-34</a>
       </div>
-    </div>
-    </div>
-  </header>
-  <main class="page-main">
-    <div class="container">
-      <ul class="crumbs breadcrumb">
-        <li class="crumb-item">
-          <a href="index.html">Главная</a>&gt;
-        </li>
-        <li class="crumb-item">Оформление заказа
-        </li>
-      </ul>
-      <div class="catalog catalog--basket product-order">
-        <h2 class="headline">Оформление заказа</h2>
-        <section class="catalog__list gallery-card">
-          <article class="gallery-card__item">
-            <a href="#">
-              <picture>
-                <source srcset="img/table-01.webp" type="image/webp">
-                  <img src="img/table-01.jpg" alt="">
-                </picture>
-              </a>
-              <div class="info-card product-order__count">
-                <p>
-                  <span>1 775 ₽</span> x
-                  <input type="number" name="count" value="1" min="1" placeholder=""> шт
-                </p>
-                <p class="info-card__desc">Мебельные ножки «Листья» белые</p>
+      <div class="page-header__nav navigation">
+        <div class="container">
+          <nav class="navigation__wrap main-nav main-nav--closed">
+            <a class="navigation__logo logo" href="index.html">
+              <div>
+                <img src="img/logo_catalog.svg" alt="Логотип vending plus">
               </div>
-              <button class="product-order__btn btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
+              <p>vending plus</p>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть/скрыть меню"></button>
+            <ul class="main-nav__menu menu">
+              <li>
+                <a href="vending.html">что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#">бизнес с нами</a>
+              </li>
+              <li>
+                <a href="delivery.html">оплата и доставка</a>
+              </li>
+              <li>
+                <a href="catalog.html">каталог</a>
+              </li>
+              <li>
+                <a href="catalog-product.html">интернет-магазин</a>
+              </li>
+              <li>
+                <a href="#">контакты</a>
+              </li>
+            </ul>
+            <a class="main-nav__basket" href="basket.html">
+              <img src="img/basket.png" alt="корзина товаров">
+              <span>12</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <section class="page-main__basket basket content">
+          <h2>Корзина заказов</h2>
+          <ul class="basket__list card-goods card-goods--col3">
+            <li>
+              <a class="card-goods__img">
+                <img src="img/online-img-01.png" alt="paper-cup">
+              </a>
+              <a class="card-goods__link">Стакан бумажный,<br> 58&nbsp;шт</a>
+              <div class="card-goods__count">
+                <button class="card-goods__price price-card">327 ₽</button>
+                <p>x</p>
+                <input type="number" name="count" value="1" min="1" placeholder="">
+              </div>
+              <button class="basket__btn-close btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </article>
-            <article class="gallery-card__item">
-              <a href="#">
-                <picture>
-                  <source srcset="img/table-02.webp" type="image/webp">
-                    <img src="img/table-02.jpg" alt="">
-                  </picture>
-                </a>
-                <div class="info-card product-order__count">
-                  <p>
-                    <span>1 775 ₽</span> x
-                    <input type="number" name="count" value="1" min="1" placeholder=""> шт
-                  </p>
-                  <p class="info-card__desc">Мебельные ножки «Листья» белые Мебельные ножки «Листья» белые</p>
-                </div>
-                <button class="product-order__btn btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </article>
-              <article class="gallery-card__item">
-                <a href="#">
-                  <picture>
-                    <source srcset="img/table-03.webp" type="image/webp">
-                      <img src="img/table-03.jpg" alt="">
-                    </picture>
-                  </a>
-                  <div class="info-card product-order__count">
-                    <p>
-                      <span>1 775 ₽</span> x
-                      <input type="number" name="count" value="1" min="1" placeholder=""> шт
-                    </p>
-                    <p class="info-card__desc">Мебельные ножки «Листья» белые</p>
-                  </div>
-                  <button class="product-order__btn btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </article>
-                <article class="gallery-card__item">
-                  <a href="#">
-                    <picture>
-                      <source srcset="img/table-06.webp" type="image/webp">
-                        <img src="img/table-06.jpg" alt="">
-                      </picture>
-                    </a>
-                    <div class="info-card product-order__count">
-                      <p>
-                        <span>1 775 ₽</span> x
-                        <input type="number" name="count" value="1" min="1" placeholder=""> шт
-                      </p>
-                      <p class="info-card__desc">Мебельные ножки «Листья» белые</p>
-                    </div>
-                    <button class="product-order__btn btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </article>
-                </section>
-                <div class="product-order__sum caption">
-                  <p>Итого: <span>56 345 ₽</span></p>
-                  <p>Общий вес: <span>4 кг</span></p>
-                  <a class="site-link site-link--pink" href="#">Обновить сумму</a>
-               </div>
-                <section class="form-user form-user--order">
-                  <p class="title-explanation">Для оформления заказа укажите, пожалуйста, ваши контактные данные. <span>Все поля обязательны для заполнения!</span> </p>
-                  <form class="form-user__filter" action="" method="post">
-                    <fieldset class="form-user__field field-profiles">
-                      <legend class="visually-hidden">Фамилия имя отчество</legend>
-                      <p class="field-profiles__item">
-                        <label for="full-name">ФИО:</label>
-                        <input id="full-name" name="full-name" type="text">
-                      </p>
-                      <p class="field-profiles__item">
-                        <label for="tel">Номер телефона:</label>
-                        <input id="tel" name="tel" type="tel">
-                      </p>
-                      <p class="field-profiles__item">
-                        <label for="mail">E-mail:</label>
-                        <input id="mail" name="e-mail" type="tel">
-                      </p>
-                    </fieldset>
-                    <fieldset class="form-user__field field-comment">
-                      <legend class="field-comment__title">Комментарий к заказу:</legend>
-                      <textarea name="user-text"></textarea>
-                    </fieldset>
-                    <fieldset class="form-user__field field-delivery">
-                      <legend>Способ доставки:</legend>
-                      <ul class="field-delivery__list">
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="самовывоз со склада." id="filter-delivery">
-                          <label for="filter-delivery">Самовывоз</label>
-                          <div class="view-source">
-                            <a style="text-decoration:none; font-size: 18px;" href="#">
-                              <div class="card-delivery">
-                                <div class="card-delivery__header">
-                                  <p class="site-link site-link--pink">Схема проезда</p>
-                                </div></div>
-                              </a>
-                              <div class="hide">
-                                <iframe id="cdek-calc-iframe" src="https://cdek-tk.ru/index.php?route=module/cdek_calc&tariffId=1&city_from=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C&senderCityId=&city_to=&receiverCityId=&goods%5B0%5D%5Bweight%5D=&goods%5B0%5D%5Blength%5D=&goods%5B0%5D%5Bwidth%5D=&goods%5B0%5D%5Bheight%5D=&modeId=4&ceil=on&border=on&iframe_width=332&iframe_height=330" width="332" height="330" scrolling="no" frameborder="0" style="border:1px solid gray;"></iframe>
-                              </div>
-                            </div>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-sdek">
-                          <label for="filter-sdek">СДЭК</label>
-                          <div class="view-source">
-                            <a style="text-decoration:none; font-size: 18px;" href="#">
-                              <div class="card-delivery">
-                                <div class="card-delivery__header">
-                                  <p class="site-link site-link--blue">Калькулятор доставки</p>
-                                </div></div>
-                              </a>
-                              <div class="hide">
-                                <iframe id="cdek-calc-iframe" src="https://cdek-tk.ru/index.php?route=module/cdek_calc&tariffId=1&city_from=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C&senderCityId=&city_to=&receiverCityId=&goods%5B0%5D%5Bweight%5D=&goods%5B0%5D%5Blength%5D=&goods%5B0%5D%5Bwidth%5D=&goods%5B0%5D%5Bheight%5D=&modeId=4&ceil=on&border=on&iframe_width=332&iframe_height=330" width="332" height="330" scrolling="no" frameborder="0" style="border:1px solid gray;"></iframe>
-                              </div>
-                            </div>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-line">
-                          <label for="filter-line">Деловые линии</label>
-                           <div class="view-source">
-                            <a style="text-decoration:none; font-size: 18px;" href="#">
-                              <div class="card-delivery">
-                                <div class="card-delivery__header">
-                                  <p class="site-link site-link--blue">Калькулятор доставки</p>
-                                </div></div>
-                              </a>
-                              <div class="hide">
-                                <iframe id="cdek-calc-iframe" src="https://cdek-tk.ru/index.php?route=module/cdek_calc&tariffId=1&city_from=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C&senderCityId=&city_to=&receiverCityId=&goods%5B0%5D%5Bweight%5D=&goods%5B0%5D%5Blength%5D=&goods%5B0%5D%5Bwidth%5D=&goods%5B0%5D%5Bheight%5D=&modeId=4&ceil=on&border=on&iframe_width=332&iframe_height=330" width="332" height="330" scrolling="no" frameborder="0" style="border:1px solid gray;"></iframe>
-                              </div>
-                            </div>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-pek">
-                          <label for="filter-pek">ПЭК</label>
-                          <div class="view-source">
-                            <a style="text-decoration:none; font-size: 18px;" href="#">
-                              <div class="card-delivery">
-                                <div class="card-delivery__header">
-                                  <p class="site-link site-link--blue">Калькулятор доставки</p>
-                                </div></div>
-                              </a>
-                              <div class="hide">
-                                <iframe id="cdek-calc-iframe" src="https://cdek-tk.ru/index.php?route=module/cdek_calc&tariffId=1&city_from=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C&senderCityId=&city_to=&receiverCityId=&goods%5B0%5D%5Bweight%5D=&goods%5B0%5D%5Blength%5D=&goods%5B0%5D%5Bwidth%5D=&goods%5B0%5D%5Bheight%5D=&modeId=4&ceil=on&border=on&iframe_width=332&iframe_height=330" width="332" height="330" scrolling="no" frameborder="0" style="border:1px solid gray;"></iframe>
-                              </div>
-                            </div>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-dor">
-                          <label for="filter-dor">ЖелДорЭкспедиция</label>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-dpd">
-                          <label for="filter-dpd">DPD</label>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-gtd">
-                          <label for="filter-gtd">GTD</label>
-                        </li>
-                        <li class="field-delivery__item">
-                          <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-transport2">
-                          <label for="filter-transport2">Другая транспортная компания</label>
-                        </li>
-                      </ul>
-                    </fieldset>
-                    <fieldset class="form-user__field field-address">
-                      <legend class="visually-hidden">Адрес доставки</legend>
-                      <p class="field-address__item">
-                        <label for="full-name">Почтовый индекс:</label>
-                        <input id="full-name" name="full-name" type="text">
-                      </p>
-                      <p class="field-address__item">
-                        <label for="tel">Область:</label>
-                        <input id="tel" name="tel" type="tel">
-                      </p>
-                      <p class="field-address__item">
-                        <label for="mail">Город:</label>
-                        <input id="mail" name="e-mail" type="tel">
-                      </p>
-                      <p class="field-address__item">
-                        <label for="full-name">Улица:</label>
-                        <input id="full-name" name="full-name" type="text">
-                      </p>
-                      <p class="field-address__item">
-                        <label for="tel">Дом:</label>
-                        <input id="tel" name="tel" type="tel">
-                      </p>
-                      <p class="field-address__item">
-                        <label for="mail">Офис / квартира:</label>
-                        <input id="mail" name="e-mail" type="tel">
-                      </p>
-                    </fieldset>
-                    <p class="form-user__note text-site">Нажимая на кнопку «Оплатить», Вы принимаете условия <a href="#" title="">договора оферты</a> и даёте <a href="#" title="">согласие</a> на обработку Ваших персональных данных.</p>
-                    <div class="form-user__sum">
-                      <p class="caption">Всего с доставкой: <span>56 895 ₽</span> </p>
-                      <button class="form-user__btn button">оплатить</button>
-                    </div>
-                  </form>
-                </section>
+            </li>
+            <li>
+              <a class="card-goods__img">
+                <img src="img/online-img-02.png" alt="paper-cup">
+              </a>
+              <a class="card-goods__link">Капсулы Espresso Delicato&nbsp;</a>
+              <div class="card-goods__count">
+                <button class="card-goods__price price-card">327 ₽</button>
+                <p>x</p>
+                <input type="number" name="count" value="1" min="1" placeholder="">
               </div>
-            </div></main>
-            <footer class="page-footer">
-              <div class="business">
-                <div class="business__list container">
-                  <article class="business__item text-site">
-                    <p class="business__copyright">© 2021. make mebel</p>
-                    <p>Россия, Рязань, Куйбышевское шоссе, 41, оф. 206</p>
-                    <p>E-mail: <a href="#">info@event-gk.ru</a>
-                      <a class="business__tel" href="tel:+78002222198">8 800 2222-198</a>
-                    </p>
-                    <a href="#">Посмотреть на карте</a>
-                  </article>
-                  <article class="business__item text-site">
-                    <p class="business__title">Каталог</p>
-                    <ul class="business__info breadcrumb">
-                      <li>
-                        <a href="about.html" title="">Ножки мебельные</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Подстолья</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Держатели для полок</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Стеллажи</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Предметы интерьера</a>
-                      </li>
-                    </ul>
-                  </article>
-                  <article class="business__item text-site">
-                    <p class="business__title">Информация</p>
-                    <ul class="business__info breadcrumb">
-                      <li>
-                        <a href="#" title="">О компании</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Идеи для вдохновения</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Оплата и доставка</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Договор оферты</a>
-                      </li>
-                      <li>
-                        <a href="#" title="">Обработка персональных данных</a>
-                      </li>
-                    </ul>
-                    <form class="business__form form-search" action="" method="get">
-                      <label class="visually-hidden" for="search-form-input">Поле поиска</label>
-                      <input type="search" placeholder="Поиск по сайту" id="search-form-input" required="">
-                      <button type="submit" class="form-search__btn" aria-label="Найти"></button>
-                    </form>
-                  </article>
-                </div>
+              <button class="basket__btn-close btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </li>
+            <li>
+              <a class="card-goods__img">
+                <img src="img/online-img-03.png" alt="paper-cup">
+              </a>
+              <a class="card-goods__link">Напиток со вкусом шоколада&nbsp;</a>
+              <div class="card-goods__count">
+                <button class="card-goods__price price-card">327 ₽</button>
+                <p>x</p>
+                <input type="number" name="count" value="1" min="1" placeholder="">
               </div>
-              <p class="page-footer__right container text-site">В вашем бизнесе всё
-                <a class="site-link site-link--cool-pink" href="#">работает само</a>
-              </p>
-            </footer>
-            <script src="js/swiper.min.js"></script>
-            <script src="js/script-slider.min.js"></script>
-            <script src="js/script.min.js"></script>
-            <script src="js/script-tabs.min.js"></script>
-          </body>
-          </html>
+              <button class="basket__btn-close btn-close" type="submit" name="ms2_action" value="cart/remove" aria-label="Закрыть">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </li>
+          </ul>
+          <p class="basket__sum">Итого: <span>56 345 ₽</span></p>
+        </section>
+      </div>
+      <section class="page-main__application application application--order content">
+        <h3>Оформление заказа</h3>
+        <p>Для оформления заказа укажите, пожалуйста, ваши контактные данные.
+          <span>Все поля обязательны для заполнения!</span>
+        </p>
+        <form class="application__form form-user form-user--basket" action="" method="post">
+          <fieldset class="form-user__field field-item field-item--profile">
+            <p>
+              <label for="full-name">ФИО:</label>
+              <input id="full-name" name="full-name" type="text">
+            </p>
+            <p>
+              <label for="tel">Номер телефона:</label>
+              <input id="tel" name="tel" type="tel">
+            </p>
+            <p>
+              <label for="mail">E-mail:</label>
+              <input id="mail" name="e-mail" type="email">
+            </p>
+          </fieldset>
+          <fieldset class="form-user__field field-item field-item--delivery">
+            <legend>Способ доставки:</legend>
+            <ul class="field-item__list">
+              <li class="field-item__item">
+                <input class="visually-hidden" type="radio" name="delivery" value="самовывоз со склада." id="filter-delivery">
+                <label for="filter-delivery">Самовывоз со склада.</label>
+                <a href="#" title=""> Схема проезда</a>
+                <!--
+                 <div class="view-source">
+                    <a style="text-decoration:none; font-size: 18px;" href="#">
+                    <div class="card-delivery">
+                      <div class="card-delivery__header">
+                        <a href="#" title="">Схема проезда</a>
+                          </div></div>
+                        </a>
+                        <div class="hide">
+                          <iframe id="cdek-calc-iframe" src="https://cdek-tk.ru/index.php?route=module/cdek_calc&tariffId=1&city_from=%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C&senderCityId=&city_to=&receiverCityId=&goods%5B0%5D%5Bweight%5D=&goods%5B0%5D%5Blength%5D=&goods%5B0%5D%5Bwidth%5D=&goods%5B0%5D%5Bheight%5D=&modeId=4&ceil=on&border=on&iframe_width=332&iframe_height=330" width="332" height="330" scrolling="no" frameborder="0" style="border:1px solid gray;"></iframe>
+                        </div>
+                       </div>
+                       -->
+              </li>
+              <li class="field-item__item">
+                <input class="visually-hidden" type="radio" name="delivery" value="транспортная компания" id="filter-dor">
+                <label for="filter-dor">Транспортная компания</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-user__field field-item field-item--comment">
+            <legend class="field-item__title">Комментарий к заказу:</legend>
+            <textarea name="user-text"></textarea>
+          </fieldset>
 
+          <fieldset class="form-user__field field-item field-item--address">
+            <legend class="visually-hidden">Адрес доставки</legend>
+            <p>
+              <label for="post">Почтовый индекс:</label>
+              <input id="post" name="post" type="text">
+            </p>
+            <p>
+              <label for="region">Область:</label>
+              <input id="region" name="region" type="text">
+            </p>
+            <p>
+              <label for="town">Город:</label>
+              <input id="town" name="town" type="text">
+            </p>
+            <p>
+              <label for="street">Улица:</label>
+              <input id="street" name="street" type="text">
+            </p>
+            <p>
+              <label for="house-number">Дом:</label>
+              <input id="house-number" name="house" type="text">
+            </p>
+            <p>
+              <label for="office">Офис / квартира:</label>
+              <input id="office" name="office" type="text">
+            </p>
+          </fieldset>
+          <p class="form-user__note">Нажимая на кнопку «Оплатить заказ», Вы принимаете условия <a href="#" title="">договора оферты</a> и даёте <a href="#" title="">согласие</a> на обработку Ваших персональных данных.</p>
+          <div class="form-user__sum">
+            <p>Всего с доставкой: <span>56 895 ₽</span> </p>
+            <button class="form-user__btn button">оплатить заказ</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__nav nav-footer container content">
+        <article class="nav-footer__contacts">
+          <p class="nav-footer__copyright">© 2021. Вендинг Плюс Рязань</p>
+          <p class="nav-footer__info">ИП Солнцева Елена Александровна ОГРИП 304622925800116, ИНН 622900514474</p>
+          <p class="nav-footer__info">390000, г. Рязань, ул. Новосёлов, д. 37, Р18 <a href="tel:+79036406230" title="+79036406230"> +7 903 640-62-30</a>, <a href="tel:+79209751777" title="+79209751777"> +7 920 975-17-77</a></p>
+          <a class="nav-footer__mail" href="#" title="info@vendplus.ru">info@vendplus.ru</a>
+        </article>
+          <article class="nav-footer__menu footer-menu">
+            <h4 class="footer-menu__label">Информация</h4>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#" title="">Что такое вендинг?</a>
+              </li>
+              <li>
+                <a href="#" title="">Бизнес с нами</a>
+              </li>
+              <li>
+                <a href="#" title="">Оплата и доставка</a>
+              </li>
+              <li class="footer-menu__contacts">
+                <a href="#" title="">Контакты</a>
+              </li>
+            </ul>
+          </article>
+          <article class="nav-footer__menu footer-menu">
+            <h4 class="footer-menu__label">Каталог</h4>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#" title="">Кофейные автоматы</a>
+              </li>
+              <li>
+                <a href="#" title="">Торговые автоматы</a>
+              </li>
+              <li>
+                <a href="#" title="">Стойки самообслуживания</a>
+              </li>
+              <li>
+                <a href="#" title="">Зерновые кофемашины</a>
+              </li>
+              <li>
+                <a href="#" title="">Капсульные кофемашины</a>
+              </li>
+            </ul>
+          </article>
+          <article class="nav-footer__menu footer-menu">
+            <h4 class="footer-menu__label">Интернет-магазин</h4>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#" title="">Комплектующие</a>
+              </li>
+              <li>
+                <a href="#" title="">Ингредиенты</a>
+              </li>
+              <li>
+                <a href="#" title="">Аксессуары</a>
+              </li>
+            </ul>
+          </article>
+      </div>
+      <div class="page-footer__business business">
+        <p>В вашем бизнесе всё <a href="#" title="">работает само</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.min.js"></script>
+  <script src="js/equalHeight.min.js"></script>
+</body>
+</html>

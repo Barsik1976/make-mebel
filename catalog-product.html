@@ -29,7 +29,7 @@
           <nav class="navigation__wrap main-nav main-nav--closed">
             <a class="navigation__logo logo" href="index.html">
               <div>
-                <img src="img/logo_catalog.svg" alt="Логотип vending plus">
+                <img src="img/logo_shop.svg" alt="Логотип vending plus">
               </div>
               <p>vending plus</p>
             </a>
@@ -45,10 +45,10 @@
                 <a href="delivery.html">оплата и доставка</a>
               </li>
               <li>
-                <a class="menu__link-active" href="catalog.html">каталог</a>
+                <a href="catalog.html">каталог</a>
               </li>
               <li>
-                <a href="catalog-product.html">интернет-магазин</a>
+                <a class="menu__link-active" href="catalog-product.html">интернет-магазин</a>
               </li>
               <li>
                 <a href="#">контакты</a>
@@ -63,61 +63,177 @@
       </div>
     </header>
     <main class="page-main">
-    <div class="container">
-      <ul class="crumbs breadcrumb">
-        <li class="crumb-item">
-          <a href="index.html">главная</a>|
-        </li>
-        <li class="crumb-item crumb-item--current" href="catalog.html">каталог
-        </li>
-      </ul>
-      <section class="page-main__catalog catalog content">
-        <h2>Каталог оборудования для <a href="#" title="">вендинга</a></h2>
-        <p>Вендинг — это торговля с помощью автоматизированных систем. Клиент оплачивает и получает товар или услугу благодаря техническим приспособлениям без участия продавца или специалиста.</p>
-        <ul class="catalog__list catalog-mashines catalog-mashines--index">
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/CLASSY&MILK для капсул LB.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">капсульная кофемашина</span>
-            </a>
+      <div class="container">
+        <ul class="crumbs breadcrumb">
+          <li class="crumb-item">
+            <a href="index.html">главная</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/FRANKE A400 FM CM.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">кофейный автомат </span>
-            </a>
+          <li class="crumb-item">
+            <a href="catalog-product.html">интернет-магазин</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/FRANKE S700.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">торговый автомат</span>
-            </a>
-          </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">зерновая кофемашина</span>
-            </a>
-          </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/Rheavendors Snack Europa.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">кофейный автомат</span>
-            </a>
+          <li class="crumb-item crumb-item--current">ингредиенты
           </li>
         </ul>
-      </section>
-    </div>
+        <div class="page-main__ingredients ingredients catalog-inner catalog-inner--ingredient">
+          <div class="catalog-inner__sidebar">
+            <ul class="sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">Кофе</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">В зёрнах</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Молотый</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Растворимый</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Кофейные напитки</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Капсулы</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog-inner__sidebar sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">Добавки</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Сливки</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Сиропы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Сахар</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Молоко</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog-inner__sidebar sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">Другие товары</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Чай</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Шоколад</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Бутилированная вода</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Снеки</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Чипсы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Батончики</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <section class="ingredients__gallery content">
+            <h2>Ингредиенты</h2>
+            <ul class="card-goods card-goods--col4">
+              <li>
+                <a class="card-goods__img card-goods__img--hit label-goods label-goods--hit">
+                  <img src="img/online-img-01.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Стакан бумажный,<br> 58&nbsp;шт</a>
+                <button class="card-goods__price price-card">327 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-02.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Капсулы Espresso Delicato&nbsp;</a>
+                <button class="card-goods__price price-card">20 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img card-goods__img--new label-goods label-goods--new">
+                  <img src="img/online-img-03.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Напиток со вкусом шоколада&nbsp;</a>
+                <button class="card-goods__price price-card">20 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-04.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Кофе в зёрнах Alta Roma 1000 гр&nbsp;</a>
+                <button class="card-goods__price price-card">1200 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img" href="goods-coffe.html">
+                  <img src="img/online-img-05.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Обжаренный молотый кофе 250 гр&nbsp;</a>
+                <button class="card-goods__price price-card">350 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-06.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Растворимый кофе Prontissimo! Classico 95&nbsp;г</a>
+                <button class="card-goods__price price-card">290 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-02.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Капсулы Espresso Delicato&nbsp;</a>
+                <button class="card-goods__price price-card">20 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-03.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Напиток со вкусом шоколада&nbsp;</a>
+                <button class="card-goods__price price-card">20 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-01.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Стакан бумажный,<br> 58&nbsp;шт</a>
+                <button class="card-goods__price price-card">327 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-02.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Капсулы Espresso Delicato&nbsp;</a>
+                <button class="card-goods__price price-card">20 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-03.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Напиток со вкусом шоколада&nbsp;</a>
+                <button class="card-goods__price price-card">20 ₽</button>
+              </li>
+              <li>
+                <a class="card-goods__img">
+                  <img src="img/online-img-04.png" alt="paper-cup">
+                </a>
+                <a class="card-goods__link">Кофе в зёрнах Alta Roma 1000 гр&nbsp;</a>
+                <button class="card-goods__price price-card">1200 ₽</button>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
       <section class="page-main__advantages advantages content">
         <div class="container">
           <div class="advantages__wrap">

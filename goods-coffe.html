@@ -27,9 +27,9 @@
       <div class="page-header__nav navigation">
         <div class="container">
           <nav class="navigation__wrap main-nav main-nav--closed">
-            <a class="navigation__logo logo">
+            <a class="navigation__logo logo" href="index.html">
               <div>
-                <img src="img/logo_main.svg" alt="Логотип vending plus">
+                <img src="img/logo_shop.svg" alt="Логотип vending plus">
               </div>
               <p>vending plus</p>
             </a>
@@ -48,7 +48,7 @@
                 <a href="catalog.html">каталог</a>
               </li>
               <li>
-                <a href="catalog-product.html">интернет-магазин</a>
+                <a class="menu__link-active" href="catalog-product.html">интернет-магазин</a>
               </li>
               <li>
                 <a href="#">контакты</a>
@@ -63,163 +63,48 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="slider-main swiper-container">
-        <div class="slider-main__wrapper swiper-wrapper">
-          <div class="slider-main__item swiper-slide">
-              <img src="img/slider-back_01.jpg" alt="">
-            <div class="slider-main__desc description container">
-              <section>
-                <h1>Начните свой<br> бизнес с нами</h1>
-                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
-                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
-                <a class="slider-main__button button" href="#" title="">подробнее</a>
-              </section>
-              <div class="description__img">
-                <img src="img/slider-machine_01.png" alt="coffee-machines">
-              </div>
-            </div>
-          </div>
-          <div class="slider-main__item swiper-slide">
-            <img src="img/slider-back_02.jpg" alt="">
-            <div class="slider-main__desc description container">
-              <section>
-                <h1>Начните свой бизнес с нами</h1>
-                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
-                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
-                <a class="slider-main__button button" href="#" title="">подробнее</a>
-              </section>
-              <div class="description__img">
-                <img src="img/slider-machine_02.png" alt="coffee-machines">
-              </div>
-            </div>
-          </div>
-          <div class="slider-main__item swiper-slide">
-              <img src="img/slider-back_03.jpg" alt="">
-            <div class="slider-main__desc description container">
-              <section>
-                <h1>Начните свой бизнес с нами</h1>
-                <p>Откройте мини-кофейню или торговую точку без сотрудников и постоянного персонала.</p>
-                <p>Поможем подобрать <a href="#">место</a>, <a href="#">оборудование</a> и <a href="#">ассортимент</a>.</p>
-                <a class="slider-main__button button" href="#" title="">подробнее</a>
-              </section>
-              <div class="description__img">
-                <img src="img/slider-machine_03.png" alt="coffee-machines">
-              </div>
-            </div>
-          </div>
-        </div>
-          <div class="swiper-pagination"></div>
-          <div class="slider-main__toggle slider-main__toggle--prev swiper-button-prev"></div>
-          <div class="slider-main__toggle slider-main__toggle--next swiper-button-next"></div>
-        </div>
-      <section class="page-main__all-vending all-vending content container">
-        <h2><a href="#" title="">Всё</a> для вендинга</h2>
-        <ul class="all-vending__catalog catalog-mashines catalog-mashines--index">
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/CLASSY&MILK для капсул LB.jpg" alt="капсульная кофемашина">
-              </div>
-              <p class="catalog-mashines__text">
-                <span class="catalog-mashines__type">капсульная кофемашина</span>
-                <span class="catalog-mashines__name">la precisa</span>
-                <span class="catalog-mashines__brand">Gaggia</span>
-              </p>
-            </a>
+      <div class="container">
+        <ul class="crumbs breadcrumb">
+          <li class="crumb-item">
+            <a href="index.html">главная</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img catalog-mashines__img--hit label-cofemashines label-cofemashines--hit">
-                <img src="img/FRANKE A400 FM CM.jpg" alt="капсульная кофемашина">
-              </div>
-              <p class="catalog-mashines__text">
-                <span class="catalog-mashines__type">кофейный автомат</span>
-                <span class="catalog-mashines__name">la precisa</span>
-                <span class="catalog-mashines__brand">Lavazza</span>
-              </p>
-            </a>
+          <li class="crumb-item">
+            <a href="catalog.html">интернет-магазин</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/FRANKE S700.jpg" alt="капсульная кофемашина">
-              </div>
-              <p class="catalog-mashines__text">
-                <span class="catalog-mashines__type">торговый автомат</span>
-                <span class="catalog-mashines__name">la precisa</span>
-                <span class="catalog-mashines__brand">Bianchi Vending</span>
-              </p>
-            </a>
+          <li class="crumb-item">
+            <a href="catalog.html">ингредиенты</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="catalog-machines.html">
-              <div class="catalog-mashines__img catalog-mashines__img--new label-cofemashines label-cofemashines--new">
-                <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
-              </div>
-              <p class="catalog-mashines__text">
-                <span class="catalog-mashines__type">зерновая кофемашина</span>
-                <span class="catalog-mashines__name">la precisa</span>
-                <span class="catalog-mashines__brand">rhea</span>
-              </p>
-            </a>
-          </li>
-          <li>
-            <a class="catalog-mashines__link" href="goods.html">
-              <div class="catalog-mashines__img">
-                <img src="img/Rheavendors Snack Europa.jpg" alt="капсульная кофемашина">
-              </div>
-              <p class="catalog-mashines__text">
-                <span class="catalog-mashines__type">кофейный автомат</span>
-                <span class="catalog-mashines__name">la precisa</span>
-                <span class="catalog-mashines__brand">Wittenborg</span>
-              </p>
-            </a>
+          <li class="crumb-item crumb-item--current">espresso barista gran crema 1000 гр
           </li>
         </ul>
-      </section>
-      <section class="page-main__announce announce container content">
-        <h2 class="visually-hidden">Наше производство</h2>
-        <ul class="announce__list">
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-01.jpg" alt="">
+        <section class="page-main__coffe item-product content">
+          <h2>Espresso Barista Gran Crema 1000 гр</h2>
+          <div class="item-product__wrap">
+            <div class="item-product__img">
+              <img src="img/lavazza-coffe.png" alt="">
             </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
+            <div class="item-product__info">
+              <h4>
+                <img src="img/logo-lavazza.png" alt="lavazza">
+              </h4>
+              <div class="item-product__parameters">
+                <p>Страна: Италия<br> Тип: кофе в зёрнах для кофемашин<br> Вес: 1000 гр<br> Интенсивность: 7<br> Степень обжарки: средняя</p>
+              </div>
+              <p>Espresso Barista Gran Crema — купаж медленной обжарки с ароматом сухофруктов и цветов, стойкой крема и гармоничным вкусом.</p>
+              <div class="item-product__buy">
+                <p class="price-card">790 ₽</p>
+
+                <!--
+                <p class="item-product__price price-card"> <span>790</span> <span>₽</span> </p>
+                -->
+                <button class="item-product__btn">в корзину</button>
+              </div>
             </div>
-          </li>
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-02.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-03.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-          <li class="announce__item">
-            <div class="announce__item__img">
-              <img src="img/announce-img-04.jpg" alt="">
-            </div>
-            <div class="announce__decs">
-              <p>специализированное оборудование, комплектующие и&nbsp;сырьё от лучших прозводителей</p>
-              <a class="button" href="#" title="">кафе и рестораны</a>
-            </div>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </section>
+      </div>
       <section class="page-main__online buy-online content container">
-        <h2>Купите <a href="#" title="">онлайн</a> </h2>
+        <h2>Вам могут понравиться</h2>
         <ul class="buy-online__goods card-goods">
           <li>
             <a class="card-goods__img card-goods__img--hit label-goods label-goods--hit">
@@ -250,10 +135,10 @@
             <button class="card-goods__price price-card">1200 ₽</button>
           </li>
           <li>
-            <a class="card-goods__img" href="goods-coffe.html">
+            <a class="card-goods__img">
               <img src="img/online-img-05.png" alt="paper-cup">
             </a>
-            <a class="card-goods__link" href="goods-coffe.html">Обжаренный молотый кофе 250 гр&nbsp;</a>
+            <a class="card-goods__link">Обжаренный молотый кофе 250 гр&nbsp;</a>
             <button class="card-goods__price price-card">350 ₽</button>
           </li>
           <li>
@@ -365,9 +250,6 @@
       </div>
     </footer>
   </div>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/script-slider.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/equalHeight.min.js"></script>
 </body>

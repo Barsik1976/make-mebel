@@ -29,7 +29,7 @@
           <nav class="navigation__wrap main-nav main-nav--closed">
             <a class="navigation__logo logo" href="index.html">
               <div>
-                <img src="img/logo_catalog.svg" alt="Логотип vending plus">
+                <img src="img/logo_delivery.svg" alt="Логотип vending plus">
               </div>
               <p>vending plus</p>
             </a>
@@ -42,10 +42,10 @@
                 <a href="#">бизнес с нами</a>
               </li>
               <li>
-                <a href="delivery.html">оплата и доставка</a>
+                <a class="menu__link-active" href="delivery.html">оплата и доставка</a>
               </li>
               <li>
-                <a class="menu__link-active" href="catalog.html">каталог</a>
+                <a href="catalog.html">каталог</a>
               </li>
               <li>
                 <a href="catalog-product.html">интернет-магазин</a>
@@ -62,62 +62,60 @@
         </div>
       </div>
     </header>
-    <main class="page-main">
-    <div class="container">
-      <ul class="crumbs breadcrumb">
-        <li class="crumb-item">
-          <a href="index.html">главная</a>|
-        </li>
-        <li class="crumb-item crumb-item--current" href="catalog.html">каталог
-        </li>
-      </ul>
-      <section class="page-main__catalog catalog content">
-        <h2>Каталог оборудования для <a href="#" title="">вендинга</a></h2>
-        <p>Вендинг — это торговля с помощью автоматизированных систем. Клиент оплачивает и получает товар или услугу благодаря техническим приспособлениям без участия продавца или специалиста.</p>
-        <ul class="catalog__list catalog-mashines catalog-mashines--index">
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/CLASSY&MILK для капсул LB.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">капсульная кофемашина</span>
-            </a>
+    <main class="page-main page-main--delivery">
+      <div class="container">
+        <ul class="crumbs breadcrumb">
+          <li class="crumb-item">
+            <a href="index.html">главная</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/FRANKE A400 FM CM.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">кофейный автомат </span>
-            </a>
+          <li class="crumb-item">
+            <a href="delivery.html">оплата и доставка</a>|
           </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/FRANKE S700.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">торговый автомат</span>
-            </a>
-          </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/Necta kikko MAX TO GO.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">зерновая кофемашина</span>
-            </a>
-          </li>
-          <li>
-            <a class="catalog-mashines__link" href="#">
-              <div class="catalog-mashines__img">
-                <img src="img/Rheavendors Snack Europa.jpg" alt="капсульная кофемашина">
-              </div>
-              <span class="catalog-mashines__type">кофейный автомат</span>
-            </a>
+          <li class="crumb-item crumb-item--current">как купить?
           </li>
         </ul>
-      </section>
-    </div>
+        <div class="page-main__ingredients ingredients catalog-inner">
+          <div class="catalog-inner__sidebar">
+            <ul class="sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">Оплата и доставка</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Как купить?</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Как арендовать?</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Оплата в Интернет-магазине</a>
+                  </li>
+                  <li>
+                    <a class="sidebar__link-active" href="#" title="">Доставка</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog-inner__sidebar sidebar">
+              <li>
+                <a class="sidebar__title" href="#" title="">Документация</a>
+                <ul class="sidebar-content">
+                  <li>
+                    <a href="#" title="">Договор оферты</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Условия обработки персональных данных</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <section class="delivery content">
+            <h2>Доставка</h2>
+            <p>Стоимость доставки автоматически рассчитывается при оформлении заказа и введённом местоположении. Все технические параметры и потребительские свойства приобретаемых товаров следует уточнять у нашего менеджера.</p>
+            <p>В обязанности работников Службы доставки не входит осуществление консультаций и комментариев относительно потребительских свойств товаров. При доставке проверяйте комплектность доставленного заказа, соответствие доставленных товаров описанию на нашем сайте, также проверьте товар на наличие механических повреждений. Если у вас нет претензий по поводу механических повреждений при получении заказа, то в дальнейшем подобные претензии не рассматриваются.</p>
+          </section>
+        </div>
+      </div>
       <section class="page-main__advantages advantages content">
         <div class="container">
           <div class="advantages__wrap">
